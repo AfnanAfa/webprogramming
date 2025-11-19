@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Over Example</title>
+
+    <script>
+        function changeContent() {
+            document.getElementById("myImage").src = "img1.jpeg";
+            document.getElementById("myText").innerHTML = "KMCT INSTITUTE OF TECHNOLOGY";
+        }
+
+        function originalContent() {
+            document.getElementById("myImage").src = "img2.jpeg";
+            document.getElementById("myText").innerHTML = "KMCT ARTS AND SCIENCE COLLEGE";
+        }
+    </script>
+
+</head>
+<body>
+
+    <h2 id="myText">Move your mouse over the image to change it.</h2>
+
+    <img id="myImage" src="trail.jpeg" width="300"
+         onmouseover="changeContent()"
+         onmouseout="originalContent()">
+
+</body>
+</html>
